@@ -1,0 +1,24 @@
+body {
+	  font-size: 1.5em;
+	  animation: colorchange 60s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 60s infinite; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: lightsalmon;}
+      25%  {background: crimson;}
+      50%  {background: coral;}
+      75%  {background: brown;}
+      100% {background: firebrick;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: lightsalmon;}
+      25%  {background: crimson;}
+      50%  {background: coral;}
+      75%  {background: brown;}
+      100% {background: firebrick;}
+    }
